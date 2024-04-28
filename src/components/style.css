@@ -1,0 +1,378 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 25px;
+    position: absolute;
+    height: 35px;
+    max-width: 1300px;
+    opacity: 1;
+    position: fixed;
+    transform: none;
+    top: 24px;
+    z-index: 99;
+}
+
+.nav-bar .logo-container {
+    height: 24px;
+    object-fit: cover;
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-weight: 600;
+    font-family: Nunito;
+    font-size: x-large;
+}
+
+.logo {
+    height: 24px;
+    width: auto;
+}
+
+.logo-mark {}
+
+.nav-bar .navbar {
+    align-items: center;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: #fefefecf;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px #543d3d2e;
+    display: flex;
+    height: 25px;
+    justify-content: space-evenly;
+    justify-self: center;
+    padding: 5px 12px;
+    align-self: center;
+    position: absolute;
+    width: 464px;
+    font-weight: 600;
+    font-family: Nunito;
+}
+
+.nav-bar .text-wrapper {
+    color: #000000;
+    font-size: 12px;
+    height: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 34px;
+}
+
+.nav-bar .div {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 53px;
+}
+
+.nav-text {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    font-weight: 600;
+    font-family: Nunito;
+}
+
+.nav-CTA {
+    font-weight: 700;
+}
+
+.nav-bar .text-wrapper-2 {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 70px;
+}
+
+.nav-bar .text-wrapper-3 {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 60px;
+}
+
+.nav-bar .text-wrapper-4 {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 59px;
+}
+
+.nav-bar .frame {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: #fefefecf;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px #543d3d2e;
+    display: flex;
+    gap: 12px;
+    height: 25px;
+    right: 124px;
+    padding: 5px 16px;
+    position: absolute;
+}
+
+.nav-bar .call-me-maybe {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.nav-bar .image {
+    height: 12px;
+}
+
+.nav-bar .log {
+    margin: auto;
+    max-height: 24px;
+    max-width: 24px;
+    right: 64px;
+    position: absolute;
+    padding: 0;
+}
+
+.nav-bar .liog {
+    margin: auto;
+    max-height: 24px;
+    max-width: 24px;
+    right: 25px;
+    position: absolute;
+    padding: 0 0;
+}
+
+
+/* CTA */
+
+.CTAparent {
+    display: inline-flex;
+    height: 45;
+    padding: 5px 10px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.CTAimg {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: inline;
+}
+
+.CTAtext {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* AnimCard.css */
+
+.rot {
+    background-color: #ebebeb;
+    border-radius: 25px;
+    height: 266px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(/public/img/circles.png);
+    background-position-x: 100px;
+    background-repeat: no-repeat;
+}
+
+.rot .overlap-group {
+    height: 456px;
+    position: relative;
+    top: -27px;
+    width: 530px;
+    overflow: hidden;
+}
+
+.rot .card-circle {
+    height: 266px;
+    left: 0;
+    position: absolute;
+    top: 27px;
+    width: 449px;
+}
+
+.rot .path {
+    height: 193px;
+    left: 219px;
+    position: absolute;
+    top: 142px;
+    width: 191px;
+}
+
+.rot .img {
+    height: 319px;
+    left: 157px;
+    position: absolute;
+    top: 79px;
+    width: 315px;
+}
+
+.rot .path-2 {
+    height: 436px;
+    left: 99px;
+    position: absolute;
+    top: 20px;
+    width: 431px;
+}
+
+.rot .element {
+    height: 49px;
+    left: 27px;
+    position: absolute;
+    top: 52px;
+    width: 51px;
+}
+
+.rot .qualifiedexperts {
+    height: 38px;
+    left: 27px;
+    position: absolute;
+    top: 109px;
+    width: 57px;
+}
+
+.rot .img-2 {
+    height: 49px;
+    left: 33px;
+    position: absolute;
+    top: 223px;
+    width: 26px;
+}
+
+.rot .group {
+    height: 71px;
+    left: 278px;
+    position: absolute;
+    top: 200px;
+    width: 70px;
+    /* opacity: 50%; */
+}
+
+.group {
+    display: grid;
+    width: 100%;
+    align-items: center;
+}
+
+.rot .group-1 {
+    /* height: 42px;
+    left: 0; */
+    position: absolute;
+    /* scale: .70 */
+    /* top: 153px; */
+    /* width: 42px; */
+}
+
+.rot .group-2 {
+    height: 42px;
+    left: 220px;
+    position: absolute;
+    top: 153px;
+    width: 42px;
+}
+
+.rot .group-3 {
+    height: 42px;
+    left: 341px;
+    position: absolute;
+    top: 131px;
+    width: 42px;
+}
+
+.rot .group-4 {
+    height: 42px;
+    left: 165px;
+    position: absolute;
+    top: 280px;
+    width: 42px;
+}
+
+.rot .group-5 {
+    height: 42px;
+    left: 327px;
+    position: absolute;
+    top: 63px;
+    width: 42px;
+}
+
+.rot .group-6 {
+    height: 61px;
+    left: 81px;
+    position: absolute;
+    top: 148px;
+    width: 60px;
+}
+
+.rot .group-7 {
+    height: 61px;
+    left: 220px;
+    position: absolute;
+    top: 0;
+    width: 60px;
+}
+
+.rot .group-8 {
+    height: 61px;
+    left: 79px;
+    position: absolute;
+    top: 273px;
+    width: 60px;
+}
+
+.cardHead {
+    color: #1e1e1e;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    width: 51px;
+    height: 48.538px;
+    flex-shrink: 0;
+    top: 24px;
+    left: 24px;
+    position: absolute;
+}
+
+.cardSubHead {
+    color: #1e1e1e;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    width: 57px;
+    height: 38.426px;
+    flex-shrink: 0;
+    left: 24px;
+    top: 82px;
+    position: absolute;
+}

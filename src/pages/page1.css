@@ -1,0 +1,175 @@
+.f16 {
+    display: flex;
+    width: 100%;
+    height: 897px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 0;
+}
+
+.grp4 {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 897px;
+}
+
+.small-header {
+    padding-top: 100px;
+    margin: auto;
+    display: flex;
+    width: 482px;
+    height: 19.042px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    display: flex;
+    width: 988px;
+    height: 170.38px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 750px;
+    height: 750px;
+    top: 312px;
+    gap: 0px;
+    opacity: 0px;
+    flex-shrink: 0;
+    border-radius: 750px;
+    background: linear-gradient(180deg, #d9b69308 0%, #ffaf65 100%);
+    z-index: -2;
+}
+
+.rocket {
+    width: 614px;
+    height: 691.542px;
+    bottom: -20px;
+    margin: 0 auto;
+    flex-shrink: 0;
+    background: url("/public/img/rocket.png");
+    z-index: -2;
+    position: relative;
+}
+
+.CLF {
+    width: 50%;
+    height: 500px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+.RLF {
+    width: 50%;
+    height: 500px;
+    bottom: -10px;
+    right: 0;
+    gap: 0px;
+    position: absolute;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+.clf-Mask-grp {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    gap: 0px;
+    opacity: 0px;
+    background: none;
+}
+
+.rlf-Mask-grp {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    gap: 0px;
+    opacity: 0px;
+    background: none;
+}
+
+.el1svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .el1 {
+    width: 200px;
+    height: 223.721px;
+    flex-shrink: 0;
+    width: 200px;
+    height: 223.72px;
+    top: 673.28px;
+    left: 402px;
+    bottom: 0px;
+    gap: 0px;
+    opacity: 0px;
+} */
+
+.gradLF {
+    width: 263px;
+    height: 76px;
+    top: 123px;
+    left: 23px;
+    gap: 0px;
+    opacity: 0px;
+    background: linear-gradient( 165deg, rgba(255, 228, 228, 0.6) 10.7%, #de5858 86.86%);
+}
+
+.test1 {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #fff3e8 0%, #ffaf65 100%);
+}
+
+.asdasdad {
+    width: 100%;
+    bottom: -50px;
+}
+
+.pg1-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.CTAparent.c1 {
+    background: gray;
+    color: white
+}

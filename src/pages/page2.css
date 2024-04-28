@@ -1,0 +1,69 @@
+.circle {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-self: stretch;
+    overflow: hidden;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.curve-text {
+    transform: rotate(0deg);
+}
+
+.circle .curve-text {
+    height: 67px;
+    top: 2px;
+    width: 66px;
+    left: 2px;
+    position: absolute;
+}
+
+.shape-collection {
+    align-self: stretch;
+    height: 76.9px;
+    position: relative;
+}
+
+.container-cluster {
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cluster,
+.container-cluster-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.frame-child1 {
+    height: 30.5px;
+    width: 32px;
+    position: relative;
+    object-fit: cover;
+    z-index: 5;
+}
+
+.circle,
+.column-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.column-chart {
+    width: 76px;
+    justify-content: flex-end;
+    padding: 0 0 1px;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #000;
+    font-family: "Varela Round";
+}
