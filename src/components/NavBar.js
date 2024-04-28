@@ -31,7 +31,7 @@ export const NavBar = () => {
         </div>{" "}
         <div className="frame">
           <div className="nav-CTA nav-text"> Call Me Maybe ? </div>{" "}
-          <img className="image" alt="Image" src="images/phone.png" />
+          <img className="image" alt="Image" src="images/Phone.png" />
         </div>{" "}
         <img className="log" alt="Log" src="images/Calender.png" />
         <img className="liog" alt="Liog" src="images/Menu.png" />
