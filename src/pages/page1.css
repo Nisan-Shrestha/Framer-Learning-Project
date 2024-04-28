@@ -62,7 +62,6 @@
     height: 750px;
     top: 312px;
     gap: 0px;
-    opacity: 0px;
     flex-shrink: 0;
     border-radius: 750px;
     background: linear-gradient(180deg, #d9b69308 0%, #ffaf65 100%);
@@ -108,7 +107,6 @@
     bottom: 0;
     left: 0px;
     gap: 0px;
-    opacity: 0px;
     background: none;
 }
 
@@ -118,7 +116,6 @@
     position: absolute;
     bottom: 0;
     gap: 0px;
-    opacity: 0px;
     background: none;
 }
 
@@ -138,7 +135,7 @@
     left: 402px;
     bottom: 0px;
     gap: 0px;
-    opacity: 0px;
+
 } */
 
 .gradLF {
@@ -147,7 +144,6 @@
     top: 123px;
     left: 23px;
     gap: 0px;
-    opacity: 0px;
     background: linear-gradient( 165deg, rgba(255, 228, 228, 0.6) 10.7%, #de5858 86.86%);
 }
 
