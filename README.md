@@ -1,3 +1,10 @@
+[# Active Deployed Site:](https://framer-learning-project.vercel.app/)
+
+## The site may be suitable for viewing only on desktop screens with  1100<display width<1900
+
+# About
+Rapidly prototyped the base site using figma and locofy figma to react plugin.
+The used Framer Motion to animate the compenents while debugging plain css.
 
   # Framer Motion Learning App
 
