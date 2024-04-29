@@ -9,6 +9,7 @@ const CTA = ({
   text,
   CTAcustomClass,
   delay,
+  invertClass,
   animate = false,
   whileInViewAmt,
 }) => {
@@ -25,54 +26,61 @@ const CTA = ({
     end: { opacity: [0, 0.3, 1] },
   };
   return (
-    <motion.div
-      layout
-      // delay={delay}
-      // delaych
-      variants={bgscale}
-      style={{ transformOrigin: "left" }}
-      transition={{ delay: delay, ease: "easeOut" }}
-      viewport={{ once: true, amount: whileInViewAmt }}
-      initial="start"
-      animate={whileInViewAmt < 0 ? "end" : 0}
-      whileInView={whileInViewAmt >= 0 ? "end" : ""}
-      className={`CTAparent ${CTAcustomClass} `}
-    >
-      <motion.img
-        variants={imgscale}
-        initial="start"
-        animate={whileInViewAmt < 0 ? "end" : 0}
-        whileInView={whileInViewAmt >= 0 ? "end" : ""}
-        viewport={{ once: true, amount: whileInViewAmt }}
-
-        className="CTAimg"
+    <motion.div whileTap={{ scale: 0.95 }} whileHover={{ scale: 1.05 }}>
+      <motion.div
+        layout
+        // delay={delay}
+        // delaych
+        variants={bgscale}
+        style={{ transformOrigin: "left" }}
         transition={{ delay: delay, ease: "easeOut" }}
-        style={{ transformOrigin: "center" }}
-        alt="Group"
-        src={imgsrc}
-      />{" "}
-      <motion.span
+        viewport={{ once: true, amount: whileInViewAmt }}
         initial="start"
         animate={whileInViewAmt < 0 ? "end" : 0}
         whileInView={whileInViewAmt >= 0 ? "end" : ""}
-        viewport={{ once: true, amount: whileInViewAmt }}
-        transition={{
-          delay: delay,
-          staggerChildren: 0.05,
-          delayChildren: delay,
-        }}
+        className={`CTAparent ${CTAcustomClass} `}
       >
-        {text.split("").map((char, index) => (
-          <motion.span
-            style={{ display: "inline-block", whiteSpaceCollapse: "preserve" }}
-            key={index}
-            transition={{ duration: 0.3 }}
-            variants={textAppear}
-          >
-            {`${char}`}
-          </motion.span>
-        ))}
-      </motion.span>
+        <div className="CTAimgParent">
+          <motion.img
+            variants={imgscale}
+            initial="start"
+            animate={whileInViewAmt < 0 ? "end" : 0}
+            whileInView={whileInViewAmt >= 0 ? "end" : ""}
+            viewport={{ once: true, amount: whileInViewAmt }}
+            className={`CTAimg ${invertClass}`}
+            transition={{ delay: delay, ease: "easeOut" }}
+            style={{ transformOrigin: "center" }}
+            alt="Group"
+            src={imgsrc}
+          />{" "}
+        </div>
+        <motion.span
+          style={{ paddingRight: 12 }}
+          initial="start"
+          animate={whileInViewAmt < 0 ? "end" : 0}
+          whileInView={whileInViewAmt >= 0 ? "end" : ""}
+          viewport={{ once: true, amount: whileInViewAmt }}
+          transition={{
+            delay: delay,
+            staggerChildren: 0.05,
+            delayChildren: delay,
+          }}
+        >
+          {text.split("").map((char, index) => (
+            <motion.span
+              style={{
+                display: "inline-block",
+                whiteSpaceCollapse: "preserve",
+              }}
+              key={index}
+              transition={{ duration: 0.3 }}
+              variants={textAppear}
+            >
+              {`${char}`}
+            </motion.span>
+          ))}
+        </motion.span>
+      </motion.div>
     </motion.div>
   );
 };
@@ -80,6 +88,7 @@ const CTA = ({
 CTA.defaultProps = {
   delay: 0.6,
   whileInViewAmt: -1,
+  invertClass: "",
 };
 
 export default CTA;

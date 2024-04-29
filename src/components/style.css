@@ -82,7 +82,7 @@
 }
 
 .nav-CTA {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .nav-bar .text-wrapper-2 {
@@ -173,11 +173,29 @@
 }
 
 .CTAimg {
-    width: 42px;
-    height: 42px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    display: inline;
+    /* width: 42px;
+    height: 42px; */
+    padding-left: 6px;
+    transform-origin: center center;
+    opacity: 1;
+    transform: none;
+    object-fit: contain;
+    width: 55%;
+    height: 80%;
+    margin: auto;
+}
+
+.invert {
+    filter: invert();
+}
+
+.CTAimgParent {
+    overflow: hidden;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
 }
 
 .CTAtext {

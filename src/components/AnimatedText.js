@@ -7,6 +7,8 @@ const AnimatedText = ({ text, classname, dl, whileInViewAmt, ypx,xpx, duration,s
     start: { opacity: 0, y: ypx,x:xpx },
     end: { opacity: [0,  1], y: 0,x:0 },
   };
+
+  const divided_texts = text.split(" ")
   return (
     <div className={classname}>
       <motion.span
@@ -16,15 +18,16 @@ const AnimatedText = ({ text, classname, dl, whileInViewAmt, ypx,xpx, duration,s
         // whileInView="end"
         transition={{ duration:duration, delayChildren: dl, staggerChildren: stgChld }}
         viewport={{ once: true, amount: whileInViewAmt }}
-      >
-        {text.split(" ").map((char, index) => (
+      > 
+        {divided_texts.map((char, index) => (
           <motion.span
             style={{ display: "inline-block", whiteSpaceCollapse: "preserve" }}
             key={index}
             transition={{ duration: duration }}
             variants={defAnim}
           >
-            {char + " "}
+            
+            {char + (index+1==divided_texts.length ? "":" ")}
           </motion.span>
         ))}
       </motion.span>

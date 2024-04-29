@@ -7,7 +7,7 @@ import RotImg from "./RotImg";
 const AnimCard = () => {
   return (
     <div className="rot">
-      <div className="cardHead">40</div>
+      <div className="cardHead">40+</div>
       <div className="cardSubHead">Qualified Experts</div>
       <div className="overlap-group">
         {/* <img className="card-circle" alt="Card circle" src="/img/card-circle.svg" /> */}
@@ -18,15 +18,15 @@ const AnimCard = () => {
         {/* <img className="qualifiedexperts" alt="Qualifiedexperts" src="/img/qualified-experts.svg" /> */}
         {/* <img className="img-2" alt="Img" src="/img/image.svg" /> */}
         <img className="group" alt="Group" src="/img/group-3.png" />
-        <RotImg scale={.6} radius={95} phase={0} freq={.25}></RotImg>
-        <RotImg scale={.6} radius={95} phase={3.1415*2/3} freq={.25}></RotImg>
-        <RotImg scale={.6} radius={95} phase={3.1415*4/3} freq={.25}></RotImg>
-        <RotImg scale={.75} radius={155} phase={3.1415/3+0} freq={.25}></RotImg>
-        <RotImg scale={.75} radius={155} phase={3.1415/3+3.1415*2/3} freq={.25}></RotImg>
-        <RotImg scale={.75} radius={155} phase={3.1415/3+3.1415*4/3} freq={.25}></RotImg>
-        <RotImg scale={.7} radius={215} phase={0} freq={.25}></RotImg>
-        <RotImg scale={.7} radius={215} phase={3.1415*2/3} freq={.25}></RotImg>
-        <RotImg scale={.7} radius={215} phase={3.1415*4/3} freq={.25}></RotImg>
+        <RotImg imgsrc="/images/ProfP1.png" dl={1} scale={.6} radius={95} phase={0} freq={.25}></RotImg>
+        <RotImg imgsrc="/images/ProfP2.png" dl={1} scale={.6} radius={95} phase={3.1415*2/3} freq={.25}></RotImg>
+        <RotImg imgsrc="/images/ProfP3.png" dl={1} scale={.6} radius={95} phase={3.1415*4/3} freq={.25}></RotImg>
+        <RotImg imgsrc="/images/ProfP4.png" dl={1} scale={.75} radius={155} phase={3.1415/3+0} freq={.25}></RotImg>
+        <RotImg imgsrc="/images/ProfP5.png" dl={1} scale={.75} radius={155} phase={3.1415/3+3.1415*2/3} freq={.25}></RotImg>
+        <RotImg imgsrc="/images/ProfP6.png" dl={1} scale={.75} radius={155} phase={3.1415/3+3.1415*4/3} freq={.25}></RotImg>
+        <RotImg imgsrc="/images/ProfP7.png" dl={1} scale={.7} radius={215} phase={0} freq={.25}></RotImg>
+        <RotImg imgsrc="/images/ProfP8.png" dl={1} scale={.7} radius={215} phase={3.1415*2/3} freq={.25}></RotImg>
+        <RotImg imgsrc="/images/ProfP9.png" dl={1} scale={.7} radius={215} phase={3.1415*4/3} freq={.25}></RotImg>
 
         {/* <RotImg radius={120} phase={3.1415*1.0/3} freq={.25}></RotImg> */}
         {/* <img className="group-3" alt="Group" src="/img/group-3.png" />

@@ -20,7 +20,6 @@ export const NavBar = () => {
         <div className="logo-container">
           <img className="logo" alt="Logo" src="images/FPrint.png" />
           <div className="logo-mark">Mark-X</div>{" "}
-
         </div>
         <div className="navbar">
           <div className="nav-text "> Home </div>{" "}
@@ -29,10 +28,10 @@ export const NavBar = () => {
           <div className="nav-text"> Framer Do </div>{" "}
           <div className="nav-text"> Our Cases </div>{" "}
         </div>{" "}
-        <div className="frame">
+        <motion.div whileTap={{ scale: 0.95 }} whileHover={{ scale: 1.05 }} className="frame">
           <div className="nav-CTA nav-text"> Call Me Maybe ? </div>{" "}
           <img className="image" alt="Image" src="images/Phone.png" />
-        </div>{" "}
+        </motion.div>{" "}
         <img className="log" alt="Log" src="images/Calender.png" />
         <img className="liog" alt="Liog" src="images/Menu.png" />
       </div>{" "}

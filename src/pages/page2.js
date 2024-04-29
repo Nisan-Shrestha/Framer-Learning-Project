@@ -17,29 +17,26 @@ const Page2 = () => {
     if (latest.x >= 125) {
       movingLeft = true;
     }
-    if(latest.x<=10)
-      movingLeft=false
+    if (latest.x <= 10) movingLeft = false;
     if (movingLeft) {
-      setZIndex1(1); 
-      setZIndex2(2); 
-      setZIndex3(3); 
+      setZIndex1(1);
+      setZIndex2(2);
+      setZIndex3(3);
       return;
     }
-    if (latest.x >= 25 && latest.x <=80) {
-      setZIndex1(3); 
-      setZIndex2(2); 
-      setZIndex3(1); 
+    if (latest.x >= 25 && latest.x <= 80) {
+      setZIndex1(3);
+      setZIndex2(2);
+      setZIndex3(1);
     } else if (latest.x > 80) {
-      setZIndex1(2); 
-      setZIndex2(1); 
-      setZIndex3(3); 
-    } else  {
-      setZIndex1(2); 
-      setZIndex2(3); 
-      setZIndex3(1); 
-
+      setZIndex1(2);
+      setZIndex2(1);
+      setZIndex3(3);
+    } else {
+      setZIndex1(2);
+      setZIndex2(3);
+      setZIndex3(1);
     }
-
   };
 
   return (
@@ -61,7 +58,7 @@ const Page2 = () => {
               <div className="video-player">
                 <motion.div
                   className="card4"
-                  whileInView={{ x: 0, y: 0, opacity: 1 }}
+                  whileInView={{ x: 0, y: 0, opacity: 0.8 }}
                   viewport={{ once: true, amount: 0.5 }}
                   initial={{ x: -30, y: 75, opacity: 0 }}
                   transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -69,15 +66,22 @@ const Page2 = () => {
                   <img
                     className="card4-child"
                     alt=""
-                    src="/rectangle-11@2x.png"
+                    src="/public/images/focus.webp"
                   />
-                  
+
                   <div className="timer-control">
-                     <CounterText start={0} end={100} duration={8} suffix={"%"} exponent={4}></CounterText></div>
+                    <CounterText
+                      start={0}
+                      end={100}
+                      duration={8}
+                      suffix={"%"}
+                      exponent={4}
+                    ></CounterText>
+                  </div>
                   <div className="tool-tip-box">
                     <h2 className="stress-over-no-fun-container">
-                      <p className="stress-over">Stress Over</p>
-                      <p className="no-fun">No Fun!</p>
+                      <p className="stress-over">Focus Mode</p>
+                      <p className="no-fun">Just Do It!</p>
                     </h2>
                   </div>
                 </motion.div>
@@ -110,8 +114,9 @@ const Page2 = () => {
                       style={{ zIndex: zIndex1 }}
                       className="frame-item"
                       alt=""
-                      src="/group-12@2x.png"
+                      src="images/g1.png"
                     />
+
                     <motion.img
                       initial={{ x: 0, scale: 1 }}
                       transition={{
@@ -126,8 +131,9 @@ const Page2 = () => {
                       }}
                       className="frame-inner"
                       alt=""
-                      src="/img/card-4.png"
+                      src="/images/g2.png"
                     />
+
                     <motion.img
                       initial={{ x: 0, scale: 0.75 }}
                       transition={{
@@ -142,13 +148,12 @@ const Page2 = () => {
                       }}
                       className="group-icon"
                       alt=""
-                      src="/group-12@2x.png"
+                      src="/images/g3.png"
                     />
                   </div>
                   <div className="modal-dialog">
                     <h1 className="focus-on-now">
-                      <p className="focus-on">Focus On</p>
-                      <p className="now">Now!</p>
+                      <p className="focus-on">Growth Matters!</p>
                     </h1>
                   </div>
                 </div>
@@ -163,8 +168,8 @@ const Page2 = () => {
                 <motion.img
                   initial={{ y: -125, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 1.5, ease: "easeInOut" }}
-                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                  viewport={{ once: true, amount: 1 }}
                   className="card2-icon"
                   alt=""
                   src="/card2.svg"
@@ -178,8 +183,8 @@ const Page2 = () => {
                     ypx={82}
                     whileInViewAmt={0.5}
                     duration={1.5}
-                    stgChld={.2}
-                    dl={.7}
+                    stgChld={0.2}
+                    dl={0.7}
                   ></AnimatedText>
                   {/* <h1 className="why-me">Why Me?</h1> */}
                 </div>
@@ -193,12 +198,16 @@ const Page2 = () => {
                   >
                     <img className="card3-icon" alt="" src="/card3@2x.png" />
                     <div className="table-of-contents">
-                      <CounterText start={0} end={10000} duration={2} exponent={4.4} ></CounterText>
+                      <CounterText
+                        start={0}
+                        end={10000}
+                        duration={2}
+                        exponent={4.4}
+                      ></CounterText>
                     </div>
                     <div className="stepper-navigation">
                       <h1 className="things-to-do">
-                        <p className="things">Things</p>
-                        <p className="to-do">To Do!</p>
+                        <p className="things">Things To Do!</p>
                       </h1>
                     </div>
                   </motion.div>
@@ -228,9 +237,10 @@ const Page2 = () => {
                           src="/img/curve text.png"
                         />
                         <img
+                        style={{borderRadius:"50%",scale:"1.2"}}
                           className="frame-child1"
                           alt=""
-                          src="/group-6@2x.png"
+                          src="/images/heart.webp"
                         />
                       </div>
                     </div>
@@ -253,21 +263,17 @@ const Page2 = () => {
                   <img
                     className="icon-iconset-child"
                     alt=""
-                    src="/group-12-1@2x.png"
+                    src="/images/Tool.png"
                   />
-                  <img
-                    className="icon-iconset-item"
-                    alt=""
-                    src="/group-12-1@2x.png"
-                  />
+                  <img className="icon-iconset-child" alt="" src="/images/" />
                 </div>
                 <div className="driving-innovation-forward-parent">
                   <div className="driving-innovation-forward">
-                    Driving Innovation Forward
+                    Challenges, Make Champions!
                   </div>
                   <h1 className="one-day-we-will-container">
-                    <p className="one-day">One Day</p>
-                    <p className="we-will-make">We Will Make it There!</p>
+                    <p className="one-day">Learn Today</p>
+                    <p className="we-will-make">Conquer Challenges!</p>
                   </h1>
                 </div>
               </div>

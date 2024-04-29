@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useState,useEffect } from "react";
-const RotImg = ({radius, freq,phase,scale}) => {
+const RotImg = ({radius, freq,phase,scale,imgsrc, dl}) => {
 
   const [time, setTime] = useState(0);
 
@@ -18,11 +18,13 @@ const RotImg = ({radius, freq,phase,scale}) => {
 
   return (
     <motion.img
+    // transition={{delay:dl}}
       animate={{ x: xpos, y: ypos,scale:scale }}
       className="group group-1"
       alt="Group"
-      src="/img/group-3.png"
-      
+      style={{borderRadius:"50%"}}
+      src={imgsrc}
+      // transition={{delay:dl}}
       //   phase={1}
     //   radius={120}
     >{console.log()}</motion.img>
@@ -33,7 +35,8 @@ RotImg.defaultProps = {
     radius: 120,
     frequency: 1,
     phase: 0,
-    scale:1
+    scale:1,
+    dl:0
   };
 
 export default RotImg;

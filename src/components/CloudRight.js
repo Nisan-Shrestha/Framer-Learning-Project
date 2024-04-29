@@ -26,7 +26,6 @@ let sca = [.75, .9, 1, 0.7, 1.2, .8,.9,1.1, 1,.75,0.65];
 sca.reverse()
 xarr.push(770,450,120)
 yarr.push(450,800,480)
-console.log(yarr, xarr,index,sca);
   let init = [yarr[0], xarr[0], sca[0]];
   return (
     <div className="rlf-Mask-grp">

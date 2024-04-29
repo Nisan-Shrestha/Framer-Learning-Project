@@ -18,7 +18,7 @@ const Page3 = () => {
               whileInViewAmt={0.2}
             ></AnimatedText>
             <AnimatedText
-              text={`Discover Your Inner Traumas`}
+              text={`Discover Your Inner Strength`}
               classname={"discover-your-inner"}
               dl={0.2}
               whileInViewAmt={0.2}
@@ -32,7 +32,7 @@ const Page3 = () => {
               ypx={0}
               stgChld={0.06}
               whileInViewAmt={0.4}
-              text={`From Normal, None to Over and Beyond! We specialize in all levels of Thinking!`}
+              text={`From Normal, None to Over and Beyond! Specialize in all levels of Thoughts!`}
               classname="from-normal-none"
             ></AnimatedText>
           </div>
@@ -58,7 +58,7 @@ const Page3 = () => {
             <div className="wrap-card-header">
               <div className="font-family-fonts">
                 <div className="our-services-wrapper">
-                  <h2 className="our-services">Our Services</h2>
+                  <h2 className="our-services">Be Free</h2>
                 </div>
               </div>{" "}
               <div className="font-family-fonts-parent">
@@ -72,7 +72,7 @@ const Page3 = () => {
             </div>
             <div className="number-cruncher">
               <div className="error-handler">
-                <h1 className="growith-hacking-cases">growth hacking cases</h1>
+                <h1 className="growith-hacking-cases">Stuff to Do.</h1>
               </div>
               <h2 className="to-be-or">
                 To Be or Not To Be, Now that is the question of a lifetime, that
@@ -81,7 +81,7 @@ const Page3 = () => {
             </div>
             <div className="crisis-consult">
               <span>$0.00</span>
-              <span className="crisis-consult1"> / crisis consult</span>
+              <span className="crisis-consult1"> / self work</span>
             </div>
           </div>
         </motion.div>
@@ -117,22 +117,25 @@ const Page3 = () => {
                     className="frame-parent2"
                   >
                     <motion.img
+                    style={ {borderRadius:"50%"} }
                       variants={stackedImg}
                       className="frame-child4"
                       alt=""
-                      src="/group-12-2@2x.png"
+                      src="/images/ProfP1.png"
                     />
                     <motion.img
+                    style={ {borderRadius:"50%"} }
                       variants={stackedImg}
                       className="frame-child5"
                       alt=""
-                      src="/group-12-2@2x.png"
+                      src="/images/ProfP2.png"
                     />
                     <motion.img
+                    style={ {borderRadius:"50%"} }
                       variants={stackedImg}
                       className="frame-child6"
                       alt=""
-                      src="/group-12-2@2x.png"
+                      src="/images/ProfP3.png"
                     />
                     <motion.div
                       variants={stackedImg}
@@ -149,13 +152,13 @@ const Page3 = () => {
                 <div className="patterns-patterns-parent">
                   <div className="patterns-patterns">
                     <div className="gradient-gradients">
-                      <h2 className="our-services1">Our Services</h2>
+                      <h2 className="our-services1">Be Free</h2>
                     </div>
                   </div>
                   <div className="blending-image-images">
                     <div className="opacity-mask-opacity">40</div>
                   </div>
-                  <h1 className="experts">experts</h1>
+                  <h1 className="experts">mins to start</h1>
                 </div>
               </div>
               <div className="drop-shadow-drop-shadows">
@@ -165,12 +168,12 @@ const Page3 = () => {
             <div className="frame-wrapper3">
               <div className="skilled-in-overthing-underthi-parent">
                 <h2 className="skilled-in-overthing">
-                  Skilled in overthing, underthinking, not thinking and thinking
-                  about thoughts and everything else!
+                  Stop the overthing and underthinking. 
+                  Try not thinking and start doing literally anything else!
                 </h2>
                 <div className="thought-think">
                   <span>$0.00</span>
-                  <span className="thought-think1"> / thought think</span>
+                  <span className="thought-think1"> / starting</span>
                 </div>
               </div>
             </div>

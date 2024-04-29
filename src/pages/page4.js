@@ -19,7 +19,7 @@ const Page4 = () => {
                   className="iteration-manager"
                 >
                   <h3 className="years-of-experience">
-                    23+ Years of Experience
+                    23+ Years of Living
                   </h3>
                 </motion.div>
               </div>
@@ -30,7 +30,7 @@ const Page4 = () => {
                 transition={{ duration: 2.2, type: "spring" }}
                 className="nisan-shrestha-10"
                 alt=""
-                src="/nisan-shrestha-10@2x.png"
+                src="/images/ProfP1.png"
               />
             </div>
           </div>
@@ -52,7 +52,7 @@ const Page4 = () => {
                 transition={{ duration: 2.2, type: "spring" }}
                 className="data-dequeue"
               >
-                <h3 className="years-in-ranting">7+ Years in Ranting</h3>
+                <h3 className="years-in-ranting">17+ Years in Ranting</h3>
               </motion.div>
             </div>
           </div>
@@ -78,7 +78,7 @@ const Page4 = () => {
       />
       <div className="timer">
         <div className="scheduler">
-          <h1 className="meet-our-experts">Meet Our Experts</h1>
+          <h1 className="meet-our-experts">Explore Your Thoughts</h1>
         </div>
         <motion.img
           initial={{ x: -390, y: 10 }}
@@ -87,7 +87,7 @@ const Page4 = () => {
           transition={{ duration: 2.2, type: "spring" }}
           className="nisan-shrestha-4"
           alt=""
-          src="/nisan-shrestha-1@2x.png"
+          src="/images/Til1.jpg"
         />
       </div>
       <div className="centerer">
@@ -95,14 +95,14 @@ const Page4 = () => {
           delay={0.6}
           whileInViewAmt={1}
           imgsrc="/group-1@2x.png"
-          text="Call Me Maybe?"
+          text="Expand Your Mind!"
           CTAcustomClass="async-manager"
         />
         <CTA
           delay={0.6}
           whileInViewAmt={1}
           imgsrc="/group-1-1@2x.png"
-          text="Call Me Maybe?"
+          text="Open Your Eyes!"
           CTAcustomClass="async-manager1"
         />
       </div>
@@ -119,7 +119,7 @@ const Page4 = () => {
                     transition={{ duration: 2.2, type: "spring" }}
                     className="nisan-shrestha-2"
                     alt=""
-                    src="/nisan-shrestha-2@2x.png"
+                    src="/images/Til3.jpg"
                   />
                   <motion.img
                     initial={{ x: 320, y: -230 }}
@@ -128,7 +128,7 @@ const Page4 = () => {
                     transition={{ duration: 2.2, type: "spring" }}
                     className="nisan-shrestha-3"
                     alt=""
-                    src="/nisan-shrestha-1@2x.png"
+                    src="/images/Til2.jpg"
                   />
                 </div>
                 <motion.div
@@ -138,7 +138,7 @@ const Page4 = () => {
                   transition={{ duration: 2.2, type: "spring" }}
                   className="log-processor"
                 >
-                  <h3 className="successful-bursts">5 successful bursts</h3>
+                  <h3 className="successful-bursts">5 successful outbursts</h3>
                 </motion.div>
               </div>
             </div>
@@ -163,7 +163,7 @@ const Page4 = () => {
                 transition={{ duration: 2.2, type: "spring" }}
                 className="log-scheduler"
               >
-                <h3 className="unhappy-hours">100 Unhappy Hours</h3>
+                <h3 className="unhappy-hours">100+ Anxious Hours</h3>
               </motion.div>
               <motion.div
                 initial={{ x: -160, y: -210, zIndex: -5 }}
@@ -175,7 +175,7 @@ const Page4 = () => {
                 <motion.img
                   className="nisan-shrestha-8"
                   alt=""
-                  src="/nisan-shrestha-8@2x.png"
+                  src="/images/Til4.jpg"
                 />
               </motion.div>
             </div>
@@ -195,9 +195,9 @@ const Page4 = () => {
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ amount: 0.1, once: true }}
                   transition={{ type: "spring", delay: 0.6 }}
-                  className="log-filter-child"
+                  className="log-filter-item"
                   alt=""
-                  src="/group-1-2@2x.png"
+                  src="/images/ProfP6.png"
                 />
                 <motion.img
                   initial={{ y: 32, opacity: 0 }}
@@ -206,16 +206,16 @@ const Page4 = () => {
                   transition={{ type: "spring", delay: 0.45 }}
                   className="log-filter-item"
                   alt=""
-                  src="/group-1-2@2x.png"
+                  src="/images/ProfP7.png"
                 />
                 <motion.img
                   initial={{ y: 32, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ amount: 0.1, once: true }}
                   transition={{ type: "spring", delay: 0.6 }}
-                  className="log-filter-inner"
+                  className="log-filter-item"
                   alt=""
-                  src="/group-1-2@2x.png"
+                  src="/images/ProfP1.png"
                 />
               </div>
             </div>

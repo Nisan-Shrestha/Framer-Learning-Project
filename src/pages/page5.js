@@ -15,26 +15,20 @@ const Page5 = () => {
         <div className="frame-wrapper4">
           <div className="connector-parent">
             <div className="connector">
-              <CTA
-                imgsrc="/group-1-3@2x.png"
-                text="Get Full Access!"
-                whileInViewAmt={1}
-                delay={0.1}
-                CTAcustomClass={"dividerCTA divder call-me-maybe3 "}
-              ></CTA>
+             
             </div>
             <div className="frame-parent4">
               <div className="frame-wrapper5">
                 <motion.img
+                  viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   initial={{ x: 20, y: 64, opacity: 0 }}
                   whileInView={{ x: 0, y: 0, opacity: 1 }}
                   className="frame-icon"
                   alt=""
-                  src="/frame-20.svg"
+                  src="/images/graph.svg"
                 />
               </div>
-              
             </div>
           </div>
         </div>
@@ -58,13 +52,13 @@ const Page5 = () => {
                 className="frame-parent7"
               >
                 <motion.div className="card-wrapper-ele" variants={vars}>
-                  <Card imgsrc="/group-16@2x.png" text="Do What Feels Right!" />
+                  <Card  imgsrc="/images/ProfP3.png" text="Do What Feels Right!" />
                 </motion.div>
                 <motion.div className="card-wrapper-ele" variants={vars}>
-                  <Card imgsrc="/group-16@2x.png" text="Do What Feels Happy!" />
+                  <Card  imgsrc="/images/ProfP6.png" text="Do What Feels Happy!" />
                 </motion.div>
                 <motion.div className="card-wrapper-ele" variants={vars}>
-                  <Card imgsrc="/group-16@2x.png" text="Do What Feels Easy!" />
+                  <Card  imgsrc="/images/ProfP9.png" text="Do What Feels Easy!" />
                 </motion.div>
               </motion.div>
             </div>
@@ -91,7 +85,13 @@ const Page5 = () => {
                 time moves on and we grow older. This will go ahead, all will be
                 fine.
               </h1> */}
-              <motion.div initial={{y:48, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:.8 ,delay:.6}}  className="form-input">
+              <motion.div
+                viewport={{ once: true, amount: 0.5 }}
+                initial={{ y: 48, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="form-input"
+              >
                 <h1 className="explore-in-details-container">
                   <span className="explore-in-details">Explore in Details</span>
                   {` ->`}

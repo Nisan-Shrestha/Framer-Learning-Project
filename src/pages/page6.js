@@ -1,7 +1,7 @@
 import React from "react";
 import { easeOut, motion } from "framer-motion";
 import Anim3d from "../components/Anim3d";
-
+import ButtonWithControlledHover from "../components/ButtonWithControlledHover";
 const Page6 = () => {
   const vars = {
     initial: { opacity: 0, y: 150 },
@@ -26,6 +26,7 @@ const Page6 = () => {
             <motion.div
               initial={{ y: 86, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.8 }}
               transition={{ duration: 0.8, delay: 1.5, ease: "easeOut" }}
               className="wari-bata-pari-road-984-122-parent"
             >
@@ -48,40 +49,63 @@ const Page6 = () => {
             <motion.div
               initial="initial"
               whileInView="end"
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ delayChildren: 2.2, staggerChildren: 0.2 }}
               className="frame-parent16"
             >
               <motion.div variants={vars} className="name-wrapper">
-                <h1 className="name">Name</h1>
+                <input placeholder="Name" className="name"></input>
               </motion.div>
-              <motion.div variants={vars} className="name-container">
-                <h1 className="name1">Name</h1>
+              <motion.div variants={vars} className="name-wrapper">
+                <input placeholder="Contact" className="name"></input>
               </motion.div>
-              <motion.div variants={vars} className="name-frame">
-                <h1 className="name2">Name</h1>
+              <motion.div variants={vars} className="name-wrapper">
+                <input placeholder="Email" className="name"></input>
               </motion.div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0 }}
               transition={{ duration: 0.75, delay: 2.7 }}
               className="name-wrapper1"
             >
-              <h1 className="name3">Name</h1>
+              <input className="name3" placeholder="Comment"></input>
             </motion.div>
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 100,scale:.5 }}
-            whileInView={{ opacity: 1, y: 0,scale:1}}
-            transition={{ duration: 0.75, delay: 3.4 }}
-            className="frame-parent17"
-          >
-            <div className="frame-wrapper11">
-              <div className="wrapper6">
-                <h1 className="h19">↗</h1>
+          <motion.div whileTap={{ scale: 0.95 }} whileHover={{ scale: 1.05 }}>
+            <motion.button
+              // onHoverEnd={(e) => {}}
+              initial={{ opacity: 0, y: 100, scale: 0.5 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                transition: {
+                  duration: 0.75,
+                  delay: 3.4, // Correctly placing the delay
+                  
+                },
+                viewport: { once: true },
+              }}
+              // whileHover={{
+              //   scale: 1.05,
+              //   transition: {
+              //     duration: 0.2,
+              //     delay: 0, // Ensuring no delay on hover
+              //   },
+              // }}
+              className="frame-parent17"
+            >
+              <div className="frame-wrapper11">
+                <div className="wrapper6">
+                  <h1 className="h19">↗</h1>
+                </div>
               </div>
-            </div>
-            <h1 className="send">Send</h1>
+              <h1 className="send">Send</h1>
+            </motion.button>
+
+            {/* <ButtonWithControlledHover/> */}
           </motion.div>
         </div>
       </div>

@@ -8,12 +8,10 @@ const Card = ({text,imgsrc}) => {
         <h1 className="from-stress-to">{text}</h1>
       </div>
       <div className="frame-parent9">
-        <div className="frame-wrapper7">
-          <div className="wrapper2">
-            <h1 className="h15">⇒</h1>
+          <div className="frame-wrapper7">
+        
           </div>
-        </div>
-        <img className="frame-child7" alt="" src={imgsrc} />
+          <img className="frame-child7" alt="" style={{borderRadius:"50%"}} src={imgsrc} />
       </div>
     </div>
   );

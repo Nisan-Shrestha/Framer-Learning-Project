@@ -1,3 +1,7 @@
+#root {
+    font-family: Nunito;
+}
+
 .f16 {
     display: flex;
     width: 100%;
@@ -10,6 +14,7 @@
 
 .grp4 {
     width: 100%;
+    display: grid;
     position: relative;
     max-width: 100%;
     overflow: hidden;
@@ -35,7 +40,7 @@
 }
 
 .hero-header {
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
     margin: auto;
     display: flex;
@@ -49,7 +54,7 @@
     font-family: Inter;
     font-size: 64px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     line-height: normal;
 }
 
@@ -69,12 +74,13 @@
 }
 
 .rocket {
-    width: 614px;
-    height: 691.542px;
-    bottom: -20px;
-    margin: 0 auto;
+    justify-self: center;
+    /* width: 614px; */
+    /* height: 691.542px; */
+    bottom: -48px;
+    margin: auto;
     flex-shrink: 0;
-    background: url("/public/img/rocket.png");
+    /* background: url(/public/images/rocket.png); */
     z-index: -2;
     position: relative;
 }

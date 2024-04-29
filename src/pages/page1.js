@@ -1,15 +1,28 @@
 import "./page1.css";
 import React from "react";
 import { motion } from "framer-motion";
+import { useScroll } from "framer-motion";
 import AnimatedText from "../components/AnimatedText";
+import { useRef, useEffect, useState } from "react";
 import CTA from "../components/CTA";
-// import { CTA } from "../components/CTA";
 import CloudLeft from "../components/CloudLeft";
 import CloudRight from "../components/CloudRight";
+
+import Relativescroll from "../components/Relativescoll.tsx";
 const Page1 = () => {
+  const RocketRef = useRef(null);
+  const [isRefAttached, setRefAttached] = useState(false);
+
+  useEffect(() => {
+    if (RocketRef.current) {
+      console.log("RocketRef is now attached:", RocketRef.current);
+      setRefAttached(true);
+    }
+  }, [RocketRef.current]);
+
   return (
-    <div className="f16">
-      <div className="grp4">
+    <section className="f16">
+      <div className="grp4" ref={RocketRef}>
         <motion.div
           className="small-header"
           initial={{ y: -45, opacity: 0 }}
@@ -20,40 +33,44 @@ const Page1 = () => {
             ease: "easeOut",
           }}
         >
-          Framer got me framing like that, tell me whatcha wanna frame.
+          Discover Your Depths, Find Your Future.
         </motion.div>
-        <AnimatedText
-          text="This Smooth Stuff, Uttery Buttery Smoooth Stuff"
-          classname="hero-header"
-          dl={.5}
-        />
+
+        <div className="hero-header">
+          <AnimatedText text="Ignite Your Passion" classname="" dl={0.5} />
+          <AnimatedText text="Discover Your Calling" classname="" dl={1.3} />
+        </div>
         <div className="pg1-parent">
           <CTA
-            imgsrc={"/img/log-2.png"}
-            text={"Call Me Maybe?"}
+            imgsrc={"/images/Flash.png"}
+            text={"Find your Spark!"}
             CTAcustomClass={"c1"}
+            invertClass={"invert"}
           ></CTA>
-          <CTA imgsrc={"/img/log-2.png"} text={"Text Me Maybe?"}></CTA>
+          <CTA imgsrc={"/images/Msg.png"} text={"Share the Word!"}></CTA>
         </div>
         <div className="sun"></div>
-        <motion.div
-          initial={{ y: 391 }}
-          animate={{ y: -200 }}
-          transition={{ type: "inertia", velocity: -800, timeConstant: 1000 }}
-          className="rocket"
-        ></motion.div>
-        <motion.div >
-
-        <motion.div className="CLF" initial={{y:200}} animate={{y:0}} transition={{duration:2}}>
-          <CloudLeft/>
-        </motion.div>
-        <motion.div  className="RLF" initial={{y:200}} animate={{y:0}} transition={{duration:2}}>
-          <CloudRight/>
-          
-        </motion.div >
+        {isRefAttached && <Relativescroll passedRef={RocketRef} />}
+        <motion.div>
+          <motion.div
+            className="CLF"
+            initial={{ y: 200 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 2 }}
+          >
+            <CloudLeft />
+          </motion.div>
+          <motion.div
+            className="RLF"
+            initial={{ y: 200 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 2 }}
+          >
+            <CloudRight />
+          </motion.div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

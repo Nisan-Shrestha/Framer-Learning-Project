@@ -20,13 +20,10 @@ const CounterText = ({
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
-    console.log("Component visibility:", isInView); // Debug: Check if visibility updates
 
     if (InViewCount && !isInView) {
-      console.log("Not in view yet"); // Debug: Check condition preventing start
       return;
     }
-    console.log("Starting animation"); // Debug: Confirm animation starts
 
     let frame;
     const startTimestamp = Date.now();
